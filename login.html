@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Artenvoi</title>
+    <link rel="icon" type="image/png" href="logo_icon.png" sizes="512x512">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="Logo Name.png" alt="Derki Visuals", 
+                style="width: 170px;">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="login.html" class="btn">Log In</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="login-section section-padding">
+        <div class="container login-container">
+            <div class="login-card">
+                <h2 class="text-center">Welcome!</h2>
+                <p class="text-center text-light">Sign in to access your dashboard.</p>
+                
+                <form class="login-form">
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    </div>
+                    
+                    <div class="form-options">
+                        <div class="remember-me">
+                            <input type="checkbox" id="remember" name="remember">
+                            <label for="remember">Remember Me</label>
+                        </div>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+                    
+                    <button type="submit" class="btn primary-btn large-btn">Sign In</button>
+                    
+                    <div class="social-login-divider">
+                        <span>OR</span>
+                    </div>
+
+                    <a href="#" class="btn social-btn google-btn">
+                        <i class="fab fa-google"></i> Sign In with Google
+                    </a>
+                </form>
+                
+                <div class="signup-link">
+                    Don't have an account? <a href="#">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <h2>Artenvoi</h2>
+                <p>color your ideas.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="login.html">Sign Up</a></li>
+                </ul>
+            </div>
+            <div class="footer-services">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Logo Design</a></li>
+                    <li><a href="#">Package Design</a></li>
+                    <li><a href="#">Banner Design</a></li>
+                    <li><a href="#">Flyer Design</a></li>
+                    <li><a href="#">Print Design</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Newsletter</h3>
+                <p>Subscribe for design tips and special offers.</p>
+                <form>
+                    <input type="email" placeholder="Your Email">
+                    <button type="submit" class="btn small">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Artenvoi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

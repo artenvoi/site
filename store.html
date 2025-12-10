@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Store</title>
+    <link rel="icon" type="image/png" href="logo_icon.png" sizes="512x512">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="Logo Name.png" alt="Derki Visuals", 
+                style="width: 170px;">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="login.html" class="btn">Log In</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="store-hero">
+        <div class="container">
+            <h1>Digital Products & Training</h1>
+            <p>High-quality design resources and courses to help you create professional designs.</p>
+        </div>
+    </section>
+
+    <section class="store-categories">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="btn small active" data-category="all">All Products</button>
+                <button class="btn small" data-category="templates">Design Templates</button>
+                <button class="btn small" data-category="courses">Courses</button>
+                <button class="btn small" data-category="resources">Resources</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="container">
+            <div class="products-grid">
+                <div class="product-card" data-category="templates">
+                    <img src="images/store/logo-templates.jpg" alt="Logo Templates Pack">
+                    <div class="product-info">
+                        <h3>Premium Logo Templates Pack</h3>
+                        <p class="description">50 editable logo templates for various industries in AI, PSD, and EPS formats.</p>
+                        <div class="price-section">
+                            <p class="price">$49.99</p>
+                            <p class="old-price">$99.99</p>
+                        </div>
+                        <button class="btn small add-to-cart" data-product="logo-templates">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="courses">
+                    <img src="images/store/logo-course.jpg" alt="Logo Design Masterclass">
+                    <div class="product-info">
+                        <h3>Logo Design Masterclass</h3>
+                        <p class="description">Comprehensive 12-hour course covering logo design principles, techniques, and business tips.</p>
+                        <div class="price-section">
+                            <p class="price">$99.99</p>
+                        </div>
+                        <button class="btn small add-to-cart" data-product="logo-course">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="resources">
+                    <img src="images/store/brand-guide.jpg" alt="Brand Identity Guide">
+                    <div class="product-info">
+                        <h3>Brand Identity Guide Template</h3>
+                        <p class="description">Professional brand guidelines template with customizable InDesign and PDF formats.</p>
+                        <div class="price-section">
+                            <p class="price">$29.99</p>
+                            <p class="old-price">$49.99</p>
+                        </div>
+                        <button class="btn small add-to-cart" data-product="brand-guide">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="templates">
+                    <img src="images/store/flyer-templates.jpg" alt="Flyer Templates">
+                    <div class="product-info">
+                        <h3>Flyer Design Templates</h3>
+                        <p class="description">30 modern flyer templates for events, sales, and promotions in PSD and AI formats.</p>
+                        <div class="price-section">
+                            <p class="price">$39.99</p>
+                        </div>
+                        <button class="btn small add-to-cart" data-product="flyer-templates">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="courses">
+                    <img src="images/store/package-course.jpg" alt="Package Design Course">
+                    <div class="product-info">
+                        <h3>Package Design Workshop</h3>
+                        <p class="description">8-hour workshop on creating stunning product packaging with real-world case studies.</p>
+                        <div class="price-section">
+                            <p class="price">$79.99</p>
+                            <p class="old-price">$129.99</p>
+                        </div>
+                        <button class="btn small add-to-cart" data-product="package-course">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="resources">
+                    <img src="images/store/font-bundle.jpg" alt="Font Bundle">
+                    <div class="product-info">
+                        <h3>Premium Font Bundle</h3>
+                        <p class="description">Collection of 50 professional fonts for logos, branding, and print materials.</p>
+                        <div class="price-section">
+                            <p class="price">$59.99</p>
+                        </div>
+                        <button class="btn small add-to-cart" data-product="font-bundle">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be added dynamically -->
+        </div>
+        <div class="cart-total">
+            <p>Total: <span class="total-amount">$0.00</span></p>
+            <button class="btn checkout-btn" id="paystack-checkout">Proceed to Checkout</button>
+        </div>
+    </section>
+    <div class="cart-overlay"></div>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <p>"The logo templates pack saved me so much time! The quality is exceptional and my client loved the final result."</p>
+                    <div class="author">
+                        <img src="images/testimonials/user1.jpg" alt="Sarah J.">
+                        <p>Sarah J.<br>Freelance Designer</p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"The Logo Design Masterclass transformed my skills. I've already landed three new clients after completing the course."</p>
+                    <div class="author">
+                        <img src="images/testimonials/user2.jpg" alt="Michael T.">
+                        <p>Michael T.<br>Graphic Designer</p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"The brand identity guide template helped me present my work professionally to clients. Worth every penny!"</p>
+                    <div class="author">
+                        <img src="images/testimonials/user3.jpg" alt="Lisa M.">
+                        <p>Lisa M.<br>Brand Consultant</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <h2>Artenvoi</h2>
+                <p>color your ideas.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="login.html">Sign Up</a></li>
+                </ul>
+            </div>
+            <div class="footer-services">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Logo Design</a></li>
+                    <li><a href="#">Package Design</a></li>
+                    <li><a href="#">Banner Design</a></li>
+                    <li><a href="#">Flyer Design</a></li>
+                    <li><a href="#">Print Design</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Newsletter</h3>
+                <p>Subscribe for design tips and special offers.</p>
+                <form>
+                    <input type="email" placeholder="Your Email">
+                    <button type="submit" class="btn small">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Artenvoi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Paystack Integration -->
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

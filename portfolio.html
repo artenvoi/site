@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Portfolio</title>
+    <link rel="icon" type="image/png" href="logo_icon.png" sizes="512x512">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="Logo Name.png" alt="Derki Visuals", 
+                style="width: 170px;">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="login.html" class="btn">Log In</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="portfolio-hero">
+        <div class="container">
+            <h1>Our Design Portfolio</h1>
+            <p>Explore our collection of premium designs created for clients across various industries.</p>
+        </div>
+    </section>
+
+    <section class="portfolio-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="btn small active" data-filter="all">All Works</button>
+                <button class="btn small" data-filter="logo">Logo Designs</button>
+                <button class="btn small" data-filter="package">Package Designs</button>
+                <button class="btn small" data-filter="banner">Banner Designs</button>
+                <button class="btn small" data-filter="flyer">Flyer Designs</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio-grid">
+        <div class="container">
+            <div class="grid">
+                <div class="portfolio-item" data-category="logo">
+                    <img src="images/portfolio/logo1.jpg" alt="Logo Design">
+                    <div class="overlay">
+                        <h3>Foodie Logo</h3>
+                        <p>Restaurant Brand Identity</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="logo">
+                    <img src="images/portfolio/logo2.jpg" alt="Logo Design">
+                    <div class="overlay">
+                        <h3>TechSpark Logo</h3>
+                        <p>Technology Startup</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="package">
+                    <img src="images/portfolio/package1.jpg" alt="Package Design">
+                    <div class="overlay">
+                        <h3>Organic Tea Packaging</h3>
+                        <p>Eco-friendly Design</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="package">
+                    <img src="images/portfolio/package2.jpg" alt="Package Design">
+                    <div class="overlay">
+                        <h3>Skincare Packaging</h3>
+                        <p>Luxury Beauty Brand</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="banner">
+                    <img src="images/portfolio/banner1.jpg" alt="Banner Design">
+                    <div class="overlay">
+                        <h3>Summer Sale Banner</h3>
+                        <p>Retail Promotion</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="banner">
+                    <img src="images/portfolio/banner2.jpg" alt="Banner Design">
+                    <div class="overlay">
+                        <h3>Conference Banner</h3>
+                        <p>Business Event</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="flyer">
+                    <img src="images/portfolio/flyer1.jpg" alt="Flyer Design">
+                    <div class="overlay">
+                        <h3>Music Festival Flyer</h3>
+                        <p>Event Promotion</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="flyer">
+                    <img src="images/portfolio/flyer2.jpg" alt="Flyer Design">
+                    <div class="overlay">
+                        <h3>Restaurant Menu</h3>
+                        <p>Food & Beverage</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="logo">
+                    <img src="images/portfolio/logo3.jpg" alt="Logo Design">
+                    <div class="overlay">
+                        <h3>Fitness Logo</h3>
+                        <p>Gym Brand Identity</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Transform Your Brand?</h2>
+            <p>Let's create something amazing together. Get in touch with us today.</p>
+            <a href="#contact" class="btn">Start Your Project</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <h2>Artenvoi</h2>
+                <p>color your ideas.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="login.html">Sign Up</a></li>
+                </ul>
+            </div>
+            <div class="footer-services">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Logo Design</a></li>
+                    <li><a href="#">Package Design</a></li>
+                    <li><a href="#">Banner Design</a></li>
+                    <li><a href="#">Flyer Design</a></li>
+                    <li><a href="#">Print Design</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Newsletter</h3>
+                <p>Subscribe for design tips and special offers.</p>
+                <form>
+                    <input type="email" placeholder="Your Email">
+                    <button type="submit" class="btn small">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Artenvoi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
